@@ -1,0 +1,28 @@
+generate_hourly_schedule_v6.txt
+
+Variables:
+!<INPUT 0>! -- iss
+!<INPUT 1>! -- name
+!<INPUT 2>! -- daily_req
+!<INPUT 3>! -- wake_up_hour
+!<INPUT 4>! -- schedule_format
+
+Please refer to the following description and  the  () section.
+
+To determine the daily request of !<INPUT 1>!, !<INPUT 2>!.
+
+<commentblockmarker>###</commentblockmarker>
+information for the Instructions: 
+
+!<INPUT 0>!
+
+!<INPUT 1>! is scheduled to wake up at !<INPUT 3>! today.
+
+Instructions:
+Please fill in !<INPUT 1>!'s schedule below with reference to !<INPUT 1>!'s information.
+
+```
+Completed Schedule: 
+
+!<INPUT 4>!
+```

@@ -1,0 +1,24 @@
+generate_decide_reaction_v1.txt
+
+!<INPUT 0>! -- persona_iss
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- curr_plan 
+!<INPUT 3>! -- curr_time
+!<INPUT 4>! -- objects
+!<INPUT 5>! -- objects_state
+!<INPUT 6>! -- possible_action
+
+
+<commentblockmarker>###</commentblockmarker>
+Context for the Instruction:
+!<INPUT 0>!
+
+The current plan for !<INPUT 1>! is !<INPUT 2>!. The current time is <3>. In the vicinity of !<INPUT 1>!, there is <4>. The state of !<INPUT 4>! is !<INPUT 5>!. In !<INPUT 4>!, it's possible to do the action of !<INPUT 6>!. 
+
+Instruction:
+Please write 3 options for the next actions of !<INPUT 1>!.
+
+Format:
+option1: 
+option2: 
+option3: 

@@ -1,0 +1,17 @@
+generate_action_v1.txt
+
+Variables: 
+!<INPUT 0>! -- commonset
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- past_summarize
+
+<commentblockmarker>###</commentblockmarker>
+Context for the Instructions:
+!<INPUT 0>!
+
+In the past, !<INPUT 1>! experienced !<INPUT 2>!.
+
+Instructions:
+What is the daily request of !<INPUT 1>!?
+
+To determine the daily request of !<INPUT 1>!,

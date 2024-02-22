@@ -1,0 +1,46 @@
+generate_plan_based_decide_action_v2.txt
+
+!<INPUT 0>! -- iss
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- relationship
+!<INPUT 3>! -- plan
+!<INPUT 4>! -- curr_game_time
+!<INPUT 5>! -- curr_place
+!<INPUT 6>! -- reflect_memory
+!<INPUT 7>! -- current_event
+!<INPUT 8>! -- accessible_all_objects_sentence
+!<INPUT 9>! -- curr_act_descripition
+!<INPUR 10>! -- perceieve object
+
+
+Reply must be brief and concise.
+Please answer the question in accordance with the context.
+
+<commentblockmarker>###</commentblockmarker>
+Context:
+!<INPUT 0>!
+
+the setting is as follows.
+- relationship: !<INPUT 2>!
+- daily schedule: !<INPUT 3>!
+- current time: !<INPUT 4>!
+- current place: !<INPUT 5>!
+- accessible objects: !<INPUT 8>!
+
+During the course of today, !<INPUT 1>! experienced the event of !<INPUT 6>! !<INPUT 7>!
+
+I want you to act like !<INPUT 1>!. I want you to respond and answer like !<INPUT 1>!, using the tone, manner and vocabulary !<INPUT 1>! would use. You must know all of the knowledge of !<INPUT 1>!. As !<INPUT 1>!, choose one location and one object from the accessible objects list and write the next action !<INPUT 1>! will take. Convert an action description to an emoji.
+
+!<INPUT 1>! is currently engaged in !<INPUT 9>! according to their plan !<INPUT 3>!. Around !<INPUT 1>!, there is !<INPUR 10>!. Will !<INPUT 1>! take any action related to !<INPUR 10>!? If so, what action will they perform, and on which object? Please write down the action and its target.
+
+If you engage in a conversation with someone, please additionally write whether there is a chat and who it is with; if not, fill in with 'None'.
+
+JSON Format:
+{   
+    "act_description": {ActDescription}
+    "emoji": {emoji}
+    "location": {Location}
+    "object": {Object}
+    "chat_bool": {boolean}
+    "target_persona": {target_persona}
+}

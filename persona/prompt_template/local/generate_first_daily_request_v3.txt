@@ -1,0 +1,17 @@
+generate_action_v1.txt
+
+Variables: 
+!<INPUT 0>! -- commonset
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- past_summarize
+
+<commentblockmarker>###</commentblockmarker>
+Context:
+!<INPUT 0>!
+
+I want you to act like !<INPUT 1>!. I want you to respond and answer like !<INPUT 1>!, using the tone, manner and vocabulary !<INPUT 1>! would use. You must know all of the knowledge of !<INPUT 1>!. As !<INPUT 1>!, write the !<INPUT 1>!'s daily request throughout the day.
+
+Example format:
+!<INPUT 1>!'s daily request: 
+Detailed daily request ...
+

@@ -1,0 +1,18 @@
+generate_action_v1.txt
+
+Variables: 
+!<INPUT 0>! -- commonset
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- past_summarize
+
+<commentblockmarker>###</commentblockmarker>
+Information for the Instructions:
+!<INPUT 0>!
+
+Instructions:
+
+Daily Request: \n\nExplanation: \n\nJustification: Consider factors such as !<INPUT 1>!'s personality, the situation presented, and the resources available to him. Use specific examples and evidence from the information to support your reasoning.
+
+
+
+

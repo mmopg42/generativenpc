@@ -1,0 +1,14 @@
+generate_decide_reaction_v1.txt
+
+!<INPUT 0>! -- persona_iss
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- curr_plan 
+!<INPUT 3>! -- curr_time
+!<INPUT 4>! -- objects
+!<INPUT 5>! -- objects_state
+!<INPUT 6>! -- possible_action
+
+
+<commentblockmarker>###</commentblockmarker>
+
+The player spoke to <1>. How might <1> respond?

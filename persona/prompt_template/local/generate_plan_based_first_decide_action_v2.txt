@@ -1,0 +1,41 @@
+generate_plan_based_decide_action_v2.txt
+
+!<INPUT 0>! -- iss
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- relationship
+!<INPUT 3>! -- plan
+!<INPUT 4>! -- curr_game_time
+!<INPUT 5>! -- reflect_memory
+!<INPUT 6>! -- current_event
+!<INPUT 7>! -- accessible_all_objects_sentence
+
+Reply must be brief and concise.
+
+<commentblockmarker>###</commentblockmarker>
+Context:
+!<INPUT 0>!
+
+the setting is as follows.
+- relationship: !<INPUT 2>!
+- daily schedule: !<INPUT 3>!
+- current time: !<INPUT 4>!
+- current place: Puyor's room
+- accessible objects: !<INPUT 5>!
+
+During the course of today, !<INPUT 1>! experienced the event of !<INPUT 3>! !<INPUT 4>!
+
+I want you to act like !<INPUT 1>!. I want you to respond and answer like !<INPUT 1>!, using the tone, manner and vocabulary !<INPUT 1>! would use. You must know all of the knowledge of !<INPUT 1>!. As !<INPUT 1>!, choose one location and one object from the accessible objects list and write the next action !<INPUT 1>! will take. First, explain the next action !<INPUT 1>! will take and then fill in the contents in the json file format based on this description. Convert an action description to an emoji.
+
+
+Act Description:
+emoji: 
+location: 
+act_object:
+
+JSON Format:
+{   
+    "act_description": {Act Description}
+    "emoji": {emoji}
+    "location": {location}
+    "act_object": {act_object}
+}

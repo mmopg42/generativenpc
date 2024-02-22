@@ -1,0 +1,26 @@
+generate_summarize_chat_v1.txt
+
+Variables: 
+!<INPUT 0>! -- init_persona_ISS
+!<INPUT 1>! -- init_persona_name
+!<INPUT 2>! -- target_persona_iss
+!<INPUT 3>! -- target_persona_name
+!<INPUT 4>! -- curr_chat
+
+<commentblockmarker>###</commentblockmarker>
+
+context for the Instruction:
+!<INPUT 0>!
+
+!<INPUT 2>!
+
+conversation:
+!<INPUT 4>!
+
+Instruction:
+Please summarize the conversation between !<INPUT 1>! and !<INPUT 3>!. Then, from the Perspective of !<INPUT 1>!, explain what thoughts !<INPUT 1>! had after the conversation ended.
+
+Format:
+Summary: 
+From !<INPUT 1>!'s Perspective: 
+

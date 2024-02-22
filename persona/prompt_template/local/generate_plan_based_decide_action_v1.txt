@@ -1,0 +1,26 @@
+generate_plan_based_decide_action_v1.txt
+
+!<INPUT 0>! -- iss
+!<INPUT 1>! -- persona_name
+!<INPUT 2>! -- reflect_memory
+!<INPUT 3>! -- current_event
+!<INPUT 4>! -- curr_plan
+!<INPUT 5>! -- next_plan
+!<INPUT 6>! -- accessible_all_objects_sentence
+
+
+<commentblockmarker>###</commentblockmarker>
+Information of the Instructions: 
+
+!<INPUT 0>!
+Here are the events that have happened so far.
+!<INPUT 2>!
+!<INPUT 3>!
+!<INPUT 1>!'s current schedule is !<INPUT 4>!. The next schedule for !<INPUT 1>! is !<INPUT 5>!. 
+!<INPUT 6>!.
+
+Instructions: 
+Please infer what !<INPUT 1>! will do next, considering the places !<INPUT 1>! can access.
+
+Example format:
+description: 

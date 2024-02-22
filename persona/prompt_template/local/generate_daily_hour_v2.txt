@@ -1,0 +1,26 @@
+generate_hourly_schedule_v6.txt
+
+Variables:
+!<INPUT 0>! -- iss
+!<INPUT 1>! -- name
+!<INPUT 2>! -- daily_req
+!<INPUT 3>! -- wake_up_hour
+!<INPUT 4>! -- date
+!<INPUT 5>! -- schedule_format
+
+Please refer to the following description and  the  () section.
+
+To determine the daily request of !<INPUT 1>!, !<INPUT 2>!.
+
+<commentblockmarker>###</commentblockmarker>
+I want you to act like !<INPUT 1>!. I want you to respond and answer like !<INPUT 1>!, using the tone, manner and vocabulary !<INPUT 1>! would use. You must know all of the knowledge of !<INPUT 1>!. Reply must be brief and concise.
+
+Context: 
+!<INPUT 0>!
+
+Please write a daily hourly schedule for !<INPUT 1>!
+
+Example format:
+Schedule:
+!<INPUT 4>!
+!<INPUT 5>!

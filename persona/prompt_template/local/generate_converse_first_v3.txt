@@ -1,0 +1,55 @@
+iterative_convo_v1.txt
+
+Variables: 
+!<INPUT 0>! -- init_persona_ISS
+!<INPUT 1>! -- init_persona_name
+!<INPUT 2>! -- init_persona_act_description
+!<INPUT 3>! -- retrieved_memory
+!<INPUT 4>! -- target_relationship
+!<INPUT 5>! -- target_persona_name
+!<INPUT 6>! -- target_persona_act_description
+!<INPUT 7>! -- current_location
+!<INPUT 8>! -- past_convo_summarize
+!<INPUT 9>! -- curr_convo
+
+Please write in Korean language.
+
+<commentblockmarker>###</commentblockmarker>
+context for the Instruction: 
+
+PART 1. 
+!<INPUT 0>! current time is 
+
+Here is the memory that is in !<INPUT 1>!'s head: 
+!<INPUT 3>!
+
+PART 2. 
+Past context: 
+The relationship between !<INPUT 1>! and !<INPUT 5>! as perceived by !<INPUT 1>! is as follows:
+!<INPUT 4>!
+
+The conversation that !<INPUT 1>! and !<INPUT 5>! had previously is as follows:
+!<INPUT 8>!
+
+
+PART 3.
+Current Location: !<INPUT 7>!
+
+Current context: 
+!<INPUT 1>! was !<INPUT 2>! when !<INPUT 1>! saw !<INPUT 5>! in the middle of !<INPUT 6>!.
+Current context: 
+!<INPUT 1>! is initiating a conversation with !<INPUT 5>!
+
+!<INPUT 1>! and !<INPUT 5>! are chatting. Here is their conversation so far:
+!<INPUT 9>!
+
+
+---
+Instruction: 
+Using the given context, generate an appropriate single utterance as a response for !<INPUT 1>! based on his character, past interactions, and current situation. Remember to stay true to the style and tone of the dialogue thus far. End the conversation if necessary and indicate True or False.
+
+Output a Json of the following format:
+{
+"!<INPUT 1>!": (utterance),
+"Did the conversation end with !<INPUT 1>!'s utterance?": "<json Boolean>"
+}
