@@ -190,7 +190,7 @@ def nonsafe_local_generate_response(prompt,
 # [GPT STRUCTURE]
 #############################################################
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ''
 
 def get_embedding(text):
     # text = text.replace("\n", " ")
